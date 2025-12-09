@@ -69,7 +69,7 @@ st.markdown("""
 def load_model():
     """Charge le modèle hybride une seule fois"""
     try:
-        with open('models/hybrid_rf_recommender.pkl', 'rb') as f:
+        with open('backend/models/hybrid_rf_recommender.pkl', 'rb') as f:
             model_package = pickle.load(f)
         return model_package
     except FileNotFoundError:
