@@ -365,3 +365,7 @@ if __name__ == '__main__':
     print("\n" + "="*80 + "\n")
     
     app.run(debug=True, port=5000, host='0.0.0.0')
+    import os
+print("Current working directory:", os.getcwd())
+print("Files:", os.listdir())
+print("Models folder:", os.listdir("models"))
